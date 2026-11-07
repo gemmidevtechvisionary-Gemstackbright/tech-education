@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+header p {
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+.card, .lesson-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    text-align: left;
+}
+.card {
+    text-align: center;
+}
+.score-board {
+    font-size: 16px;
+    color: #2980b9;
+    margin: 10px 0;
+}
+#question {
+    font-size: 28px;
+    color: #e74c3c;
+    margin: 15px 0;
+}
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+}
+button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+button:hover {
+    background-color: #219653;
+}
+#result {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.lessons-section h2 {
+    text-align: left;
+    color: #34495e;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.lesson-card h3 {
+    color: #2980b9;
+    font-size: 18px;
+    margin-top: 0;
+}
+.lesson-card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
