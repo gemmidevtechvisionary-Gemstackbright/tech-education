@@ -10,7 +10,7 @@ body {
 }
 
 /* ប្រអប់ផ្ទាំងធំ (Container) */
-.container {
+  main  {
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
