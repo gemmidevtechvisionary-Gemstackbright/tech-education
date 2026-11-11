@@ -11,13 +11,11 @@ body {
 
 /* ប្រអប់ផ្ទាំងធំ (Container) */
   main {
-width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .lesson-content {
