@@ -1,12 +1,11 @@
 /* រចនាប័ទ្មទូទៅនៃទំព័រ */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: #f4f6f8;
+    color: #333333;
+    font-family: sans-serif;
     margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    padding: 0;
 }
 
 /* ប្រអប់ផ្ទាំងធំ (Container) */
@@ -32,9 +31,13 @@ header {
 }
 
 header h1 {
-    color: #2c3e50;
-    font-size: 24px;
-    margin-bottom: 10px;
+    color: #1a252c;
+    line-height:1.6;
+    margin-bottom:15px;
+ p {
+    line-height: 1.6;
+    color: #555555;
+}
 }
 
 header p {
@@ -75,9 +78,13 @@ nav a:hover {
 }
 
 .card h2 {
-    color: #34495e;
-    font-size: 18px;
-    margin-top: 0;
+    color: #1a252c;
+    line-height: 1.6;
+    margin-bottom: 15px;
+p {
+    line-height: 1.6;
+    color: #555555;
+}
 }
 
 .card a {
