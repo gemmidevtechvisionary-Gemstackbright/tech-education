@@ -117,3 +117,28 @@ p {
     text-decoration: underline;
 }
 
+/* តុបតែងប្រអប់កូដឧទាហរណ៍ (Code Block) */
+pre, code {
+    font-family: 'Courier New', Courier, monospace;
+    direction: ltr; /* រក្សាទិសដៅអក្សរកូដឱ្យនៅស្តាំទៅឆ្វេងត្រឹមត្រូវ */
+    text-align: left;
+}
+
+pre {
+    background-color: #1e1e1e; /* ពណ៌ផ្ទៃខាងក្រោយខ្មៅស្រដៀង VS Code */
+    color: #d4d4d4; /* ពណ៌អក្សរស ស្តង់ដារ */
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto; /* ជួយឱ្យមាន Scrollbar បើកូដវែងពេក */
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ពណ៌អក្សរបន្ថែមសម្រាប់កូដខាងក្នុង */
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #9cdcfe; /* ពណ៌ខៀវខ្ចីស្រស់ស្អាត */
+}
