@@ -142,3 +142,42 @@ pre code {
     padding: 0;
     color: #9cdcfe; /* ពណ៌ខៀវខ្ចីស្រស់ស្អាត */
 }
+/* រចនាប័ទ្មសម្រាប់កន្លែងដាក់ប៊ូតុងមេរៀន */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+/* រចនាប័ទ្មសម្រាប់ប៊ូតុងនីមួយៗ */
+.nav-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* ពណ៌ខៀវស្អាត */
+    color: #ffffff; /* អក្សរពណ៌ស */
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px; /* ធ្វើឱ្យជ្រុងរាងមូលបន្តិច */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* ពេលយកម្រាមដៃចុច ឬយកកណ្ដុរដាក់លើ (Hover) */
+.nav-links a:hover {
+    background-color: #0056b3; /* เปลี่ยนเป็นสีน้ำเงินเข้มขึ้น */
+    transform: translateY(-2px); /* ឲ្យប៊ូតុងអណ្តែតឡើងលើតិចៗ */
+}
+
+/* បន្ថែមពណ៌ខុសគ្នាបន្តិចសម្រាប់តំណភ្ជាប់ត្រឡប់ទៅទំព័រដើម (Option) */
+.nav-links a[href="lessons.html"] {
+    background-color: #6c757d; /* ពណ៌ប្រផេះ */
+}
+
+.nav-links a[href="lessons.html"]:hover {
+    background-color: #5a6268;
+}
