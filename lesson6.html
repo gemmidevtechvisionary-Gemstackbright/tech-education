@@ -2,28 +2,55 @@
 <html lang="km">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>មេរៀនទី ៦ - ការបង្កើត Forms</title>
+    <title>មេរៀនទី ៦ - ការប្រើប្រាស់ Forms</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>មេរៀនទី ៦៖ ការប្រើប្រាស់ Forms (ទម្រង់បែបបទ)</h1>
+    <h1>មេរៀនទី ៦: ការប្រើប្រាស់ Forms (ទម្រង់បែបបទ)</h1>
     <p>Forms ត្រូវបានប្រើប្រាស់សម្រាប់ប្រមូលទិន្នន័យពីអ្នកប្រើប្រាស់ ដូចជាការចុះឈ្មោះ ឬចូលគណនីជាដើម។</p>
 
-    <form action="#" method="POST">
-        <label for="username">ឈ្មោះអ្នកប្រើប្រាស់៖</label><br>
-        <input type="text" id="username" name="username" placeholder="បញ្ចូលឈ្មោះរបស់អ្នក"><br><br>
-
-        <label for="email">អ៊ីម៉ែល (Email)៖</label><br>
-        <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
-
-        <label for="password">ពាក្យសម្ងាត់៖</label><br>
-        <input type="password" id="password" name="password"><br><br>
-
-        <button type="submit">ចុះឈ្មោះ</button>
+    <h3>លទ្ធផលបង្ហាញជាក់ស្តែង៖</h3>
+    <form action="#" method="POST" style="margin-bottom: 20px; border: 1px solid #ccc; padding: 15px; border-radius: 5px; max-width: 350px;">
+        <div style="margin-bottom: 10px;">
+            <label for="name">ឈ្មោះអ្នកប្រើប្រាស់៖</label><br>
+            <input type="text" id="name" name="name" placeholder="បញ្ជូលឈ្មោះរបស់អ្នក" style="width: 100%; padding: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="email">អ៊ីមែល (Email)៖</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" style="width: 100%; padding: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="password">ពាក្យសម្ងាត់៖</label><br>
+            <input type="password" id="password" name="password" style="width: 100%; padding: 5px;">
+        </div>
+        <button type="submit" style="padding: 8px 15px; background: #007bff; color: white; border: none; border-radius: 3px;">ចុះឈ្មោះ</button>
     </form>
 
-    <br>
-    <a href="lesson5.html">មេរៀនមុន</a> | <a href="lessons.html">ត្រឡប់ទៅទំព័រដើម</a>
+    <h3>កូដ HTML ដែលត្រូវសរសេរ៖</h3>
+    <pre style="background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto;">
+<code>&lt;form action="#" method="POST"&gt;
+    &lt;label for="name"&gt;ឈ្មោះអ្នកប្រើប្រាស់៖&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" id="name" name="name" placeholder="បញ្ជូលឈ្មោះរបស់អ្នក"&gt;
+    
+    &lt;label for="email"&gt;អ៊ីមែល (Email)៖&lt;/label&gt;&lt;br&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;button type="submit"&gt;ចុះឈ្មោះ&lt;/button&gt;
+&lt;/form&gt;</code>
+    </pre>
+
+    <p><strong>ការពន្យល់កូដ៖</strong></p>
+    <ul>
+        <li><code>&lt;form&gt;</code>៖ បង្កើតទម្រង់ប្រមូលទិន្នន័យ។</li>
+        <li><code>&lt;input type="text"&gt;</code>៖ ប្រអប់សម្រាប់វាយអត្ថបទធម្មតា។</li>
+        <li><code>&lt;input type="email"&gt;</code>៖ ប្រអប់សម្រាប់វាយទម្រង់អ៊ីមែល។</li>
+        <li><code>&lt;button type="submit"&gt;</code>៖ ប៊ូតុងសម្រាប់បញ្ជូនទិន្នន័យ។</li>
+    </ul>
+
+    <div class="nav-links">
+        <a href="lesson5.html">មេរៀនមុន</a>
+        <a href="lessons.html">ទំព័រដើម</a>
+    </div>
 </body>
 </html>
+

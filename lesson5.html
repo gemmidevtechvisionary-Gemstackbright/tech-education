@@ -2,15 +2,15 @@
 <html lang="km">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>មេរៀនទី ៥ - ការបង្កើតតារាងក្នុង HTML</title>
+    <title>មេរៀនទី ៥ - ការប្រើប្រាស់ Tables</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>មេរៀនទី ៥៖ ការប្រើប្រាស់ Tables (តារាង)</h1>
+    <h1>មេរៀនទី ៥: ការប្រើប្រាស់ Tables (តារាង)</h1>
     <p>តារាងត្រូវបានប្រើប្រាស់សម្រាប់បង្ហាញទិន្នន័យជាជួរដេក (Rows) និងជួរឈរ (Columns)។</p>
 
-    <table border="1">
+    <h3>លទ្ធផលបង្ហាញជាក់ស្តែង៖</h3>
+    <table border="1" cellpadding="8" cellspacing="0" style="margin-bottom: 20px;">
         <thead>
             <tr>
                 <th>ល.រ (No.)</th>
@@ -32,7 +32,39 @@
         </tbody>
     </table>
 
-    <br>
-    <a href="lessons.html">ត្រឡប់ក្រោយ</a> | <a href="lesson6.html">មេរៀនបន្ទាប់</a>
+    <h3>កូដ HTML ដែលត្រូវសរសេរ៖</h3>
+    <pre style="background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto;">
+<code>&lt;table border="1" cellpadding="8" cellspacing="0"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ល.រ (No.)&lt;/th&gt;
+            &lt;th&gt;ឈ្មោះមេរៀន&lt;/th&gt;
+            &lt;th&gt;ស្ថានភាព&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;១&lt;/td&gt;
+            &lt;td&gt;HTML Basics&lt;/td&gt;
+            &lt;td&gt;បានបញ្ចប់&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+    </pre>
+
+    <p><strong>ការពន្យល់កូដ៖</strong></p>
+    <ul>
+        <li><code>&lt;table&gt;</code>៖ ប្រអប់ធំសម្រាប់បង្កើតតារាង។</li>
+        <li><code>&lt;tr&gt;</code>៖ ប្រើសម្រាប់បង្កើតជួរដេក (Row)។</li>
+        <li><code>&lt;th&gt;</code>៖ ប្រើសម្រាប់ចំណងជើងជួរឈរ (Table Header)។</li>
+        <li><code>&lt;td&gt;</code>៖ ប្រើសម្រាប់បញ្ចូលទិន្នន័យក្នុងកោសិកាតារាង (Table Data)។</li>
+    </ul>
+
+    <div class="nav-links">
+        <a href="lesson4.html">មេរៀនមុន</a>
+        <a href="lessons.html">ទំព័រដើម</a>
+        <a href="lesson6.html">មេរៀនបន្ទាប់</a>
+    </div>
 </body>
 </html>
+
