@@ -141,6 +141,14 @@ pre code {
     background-color: transparent;
     padding: 0;
     color: #9cdcfe; /* ពណ៌ខៀវខ្ចីស្រស់ស្អាត */
+/* ពណ៌អក្សរបន្ទាត់ ໂចមនមុខកូដខាងក្នុង */
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #2ecc71;
+    font-weight: bold;
+}
+
 }
 /* រចនាប័ទ្មសម្រាប់កន្លែងដាក់ប៊ូតុងមេរៀន */
 .nav-links {
