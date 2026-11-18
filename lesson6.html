@@ -2,54 +2,53 @@
 <html lang="km">
 <head>
     <meta charset="UTF-8">
-    <title>មេរៀនទី ៦ - ការប្រើប្រាស់ Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>មេរៀនទី ៦៖ ការប្រើប្រាស់ Forms</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>មេរៀនទី ៦: ការប្រើប្រាស់ Forms (ទម្រង់បែបបទ)</h1>
-    <p>Forms ត្រូវបានប្រើប្រាស់សម្រាប់ប្រមូលទិន្នន័យពីអ្នកប្រើប្រាស់ ដូចជាការចុះឈ្មោះ ឬចូលគណនីជាដើម។</p>
-
+    <h2>មេរៀនទី ៦៖ ការប្រើប្រាស់ Forms (ទម្រង់បែបបទ)</h2>
+    <p>Forms ត្រូវបានប្រើប្រាស់សម្រាប់ប្រមូលព័ត៌មាន ឬទិន្នន័យពីអ្នកប្រើប្រាស់ ដូចជាការចុះឈ្មោះចូលរៀន ឬការផ្ញើសារសំណូមពរជាដើម។</p>
+    
     <h3>លទ្ធផលបង្ហាញជាក់ស្តែង៖</h3>
-    <form action="#" method="POST" style="margin-bottom: 20px; border: 1px solid #ccc; padding: 15px; border-radius: 5px; max-width: 350px;">
-        <div style="margin-bottom: 10px;">
-            <label for="name">ឈ្មោះអ្នកប្រើប្រាស់៖</label><br>
-            <input type="text" id="name" name="name" placeholder="បញ្ជូលឈ្មោះរបស់អ្នក" style="width: 100%; padding: 5px;">
-        </div>
-        <div style="margin-bottom: 10px;">
-            <label for="email">អ៊ីមែល (Email)៖</label><br>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" style="width: 100%; padding: 5px;">
-        </div>
-        <div style="margin-bottom: 10px;">
-            <label for="password">ពាក្យសម្ងាត់៖</label><br>
-            <input type="password" id="password" name="password" style="width: 100%; padding: 5px;">
-        </div>
-        <button type="submit" style="padding: 8px 15px; background: #007bff; color: white; border: none; border-radius: 3px;">ចុះឈ្មោះ</button>
+    <form style="margin-bottom: 15px; font-size: 14px; background: #fdfdfd; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+        <label><b>ឈ្មោះពេញ៖</b></label><br>
+        <input type="text" placeholder="បញ្ចូលឈ្មោះរបស់អ្នក..." style="width: 100%; padding: 6px; margin-top: 3px; margin-bottom: 8px; font-size: 14px;"><br>
+        
+        <label><b>អុីម៉ែល (Email)៖</b></label><br>
+        <input type="email" placeholder="example@gmail.com" style="width: 100%; padding: 6px; margin-top: 3px; margin-bottom: 8px; font-size: 14px;"><br>
+        
+        <button type="submit" style="padding: 6px 12px; background-color: #20b2aa; color: white; border: none; border-radius: 4px; font-size: 14px;">ចុះឈ្មោះ</button>
     </form>
 
-    <h3>កូដ HTML ដែលត្រូវសរសេរ៖</h3>
-    <pre style="background-color: #1e1e1e; padding: 20px; border-radius: 8px; overflow-x: auto;">
-<code style="color: #da70d6; font-weight: bold; font-size: 20px; display: block;">&lt;form action="#" method="POST"&gt;
-    &lt;label for="name"&gt;ឈ្មោះអ្នកប្រើប្រាស់៖&lt;/label&gt;&lt;br&gt;
-    &lt;input type="text" id="name" name="name" placeholder="បញ្ជូលឈ្មោះរបស់អ្នក"&gt;
-    
-    &lt;label for="email"&gt;អ៊ីមែល (Email)៖&lt;/label&gt;&lt;br&gt;
-    &lt;input type="email" id="email" name="email"&gt;
-    
-    &lt;button type="submit"&gt;ចុះឈ្មោះ&lt;/button&gt;
-&lt;/form&gt;</code>
-</pre>
-    <p><strong>ការពន្យល់កូដ៖</strong></p>
+    <h3>ការពន្យល់កូដ៖</h3>
     <ul>
-        <li><code>&lt;form&gt;</code>៖ បង្កើតទម្រង់ប្រមូលទិន្នន័យ។</li>
-        <li><code>&lt;input type="text"&gt;</code>៖ ប្រអប់សម្រាប់វាយអត្ថបទធម្មតា។</li>
-        <li><code>&lt;input type="email"&gt;</code>៖ ប្រអប់សម្រាប់វាយទម្រង់អ៊ីមែល។</li>
-        <li><code>&lt;button type="submit"&gt;</code>៖ ប៊ូតុងសម្រាប់បញ្ជូនទិន្នន័យ។</li>
+        <li><code>&lt;form&gt;</code>៖ បង្កើតទម្រង់បែបបទសម្រាប់បញ្ចូលទិន្នន័យ។</li>
+        <li><code>&lt;label&gt;</code>៖ ចំណងជើងបញ្ជាក់ប្រអប់បញ្ចូល។</li>
+        <li><code>&lt;input type="text"&gt;</code>៖ ប្រអប់សម្រាប់វាយអត្ថបទ។</li>
+        <li><code>&lt;input type="email"&gt;</code>៖ ប្រអប់សម្រាប់វាយអ៊ីម៉ែល។</li>
     </ul>
 
-    <div class="nav-links">
+    <!-- កូដឧទាហរណ៍នៅខាងក្រោមបង្អស់ -->
+    <div style="margin-top: 20px; padding: 15px; background-color: #f1f1f1; border-radius: 8px;">
+        <h3>ឧទាហរណ៍កូដ Forms បន្ថែម៖</h3>
+        <pre style="background-color: #1e1e1e; padding: 15px; border-radius: 8px; overflow-x: auto;">
+<code style="color: #ff4500; font-weight: bold; font-size: 14px; display: block;">&lt;form&gt;
+    &lt;label&gt;ឈ្មោះ៖&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" placeholder="បញ្ចូលឈ្មោះ..."&gt;&lt;br&gt;
+    
+    &lt;label&gt;Email៖&lt;/label&gt;&lt;br&gt;
+    &lt;input type="email" placeholder="email@example.com"&gt;&lt;br&gt;
+    
+    &lt;button type="submit"&gt;បញ្ជូន&lt;/button&gt;
+&lt;/form&gt;</code>
+</pre>
+    </div>
+
+    <div class="nav-links" style="margin-top: 20px;">
         <a href="lesson5.html">មេរៀនមុន</a>
-        <a href="lesson7.html">មេរៀនបន្ទាប់</a>        
         <a href="lessons.html">ទំព័រដើម</a>
+        <a href="lesson7.html">មេរៀនបន្ទាប់</a>
     </div>
 </body>
 </html>

@@ -2,65 +2,56 @@
 <html lang="km">
 <head>
     <meta charset="UTF-8">
-    <title>មេរៀនទី ៥ - ការប្រើប្រាស់ Tables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>មេរៀនទី ៥៖ ការប្រើប្រាស់ Tables</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>មេរៀនទី ៥: ការប្រើប្រាស់ Tables (តារាង)</h1>
-    <p>តារាងត្រូវបានប្រើប្រាស់សម្រាប់បង្ហាញទិន្នន័យជាជួរដេក (Rows) និងជួរឈរ (Columns)។</p>
-
+    <h2>មេរៀនទី ៥៖ ការប្រើប្រាស់ Tables (តារាង)</h2>
+    <p>Tables ត្រូវបានប្រើប្រាស់សម្រាប់បង្ហាញទិន្នន័យក្នុងទម្រង់ជាជួរដេក (Rows) និងជួរឈរ (Columns) ដែលមានសណ្តាប់ធ្នាប់ល្អសម្រាប់អ្នកសិក្សាផ្ទៀងផ្ទាត់ទិន្នន័យ។</p>
+    
     <h3>លទ្ធផលបង្ហាញជាក់ស្តែង៖</h3>
-    <table border="1" cellpadding="8" cellspacing="0" style="margin-bottom: 20px;">
-        <thead>
-            <tr>
-                <th>ល.រ (No.)</th>
-                <th>ឈ្មោះមេរៀន</th>
-                <th>ស្ថានភាព</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>១</td>
-                <td>HTML Basics</td>
-                <td>បានបញ្ចប់</td>
-            </tr>
-            <tr>
-                <td>២</td>
-                <td>HTML Tables</td>
-                <td>កំពុងរៀន</td>
-            </tr>
-        </tbody>
+    <table border="1" style="width: 100%; border-collapse: collapse; margin-bottom: 15px; font-size: 14px;">
+        <tr style="background-color: #333; color: #fff;">
+            <th style="padding: 6px;">ល.រ</th>
+            <th style="padding: 6px;">ឈ្មោះមេរៀន</th>
+            <th style="padding: 6px;">ស្ថានភាព</th>
+        </tr>
+        <tr>
+            <td style="padding: 6px; text-align: center;">១</td>
+            <td style="padding: 6px;">HTML Basics</td>
+            <td style="padding: 6px; text-align: center;">បានបញ្ចប់</td>
+        </tr>
     </table>
 
-    <h3>កូដ HTML ដែលត្រូវសរសេរ៖</h3>
-    <pre style="background-color: #1e1e1e; padding: 20px; border-radius: 8px; overflow-x: auto;">
-<code style="color: #2ecc71; font-weight: bold; font-size: 20px; display: block;">&lt;table border="1" cellpadding="8" cellspacing="0" width="100%"&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th&gt;ល.រ (No.)&lt;/th&gt;
-            &lt;th&gt;ឈ្មោះមេរៀន&lt;/th&gt;
-            &lt;th&gt;ស្ថានភាព&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;១&lt;/td&gt;
-            &lt;td&gt;HTML Basics&lt;/td&gt;
-            &lt;td&gt;បានបញ្ចប់&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;</code>
-</pre>
- 
-      <p><strong>ការពន្យល់កូដ៖</strong></p>
+    <h3>ការពន្យល់កូដ៖</h3>
     <ul>
-        <li><code>&lt;table&gt;</code>៖ ប្រអប់ធំសម្រាប់បង្កើតតារាង។</li>
-        <li><code>&lt;tr&gt;</code>៖ ប្រើសម្រាប់បង្កើតជួរដេក (Row)។</li>
-        <li><code>&lt;th&gt;</code>៖ ប្រើសម្រាប់ចំណងជើងជួរឈរ (Table Header)។</li>
-        <li><code>&lt;td&gt;</code>៖ ប្រើសម្រាប់បញ្ចូលទិន្នន័យក្នុងកោសិកាតារាង (Table Data)។</li>
+        <li><code>&lt;table&gt;</code>៖ បង្កើតតារាងសរុប។</li>
+        <li><code>&lt;tr&gt;</code>៖ បង្កើតជួរដេក (Table Row)។</li>
+        <li><code>&lt;th&gt;</code>៖ បង្កើតក្បាលតារាង (Table Header)។</li>
+        <li><code>&lt;td&gt;</code>៖ បង្កើតក្រឡាទិន្នន័យក្នុងតារាង (Table Data)។</li>
     </ul>
 
-    <div class="nav-links">
+    <!-- កូដឧទាហរណ៍នៅខាងក្រោមបង្អស់ -->
+    <div style="margin-top: 20px; padding: 15px; background-color: #f1f1f1; border-radius: 8px;">
+        <h3>ឧទាហរណ៍កូដ Tables បន្ថែម៖</h3>
+        <pre style="background-color: #1e1e1e; padding: 15px; border-radius: 8px; overflow-x: auto;">
+<code style="color: #9370db; font-weight: bold; font-size: 14px; display: block;">&lt;table border="1" width="100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;ល.រ&lt;/th&gt;
+        &lt;th&gt;មេរៀន&lt;/th&gt;
+        &lt;th&gt;ស្ថានភាព&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;១&lt;/td&gt;
+        &lt;td&gt;HTML Basics&lt;/td&gt;
+        &lt;td&gt;បានបញ្ចប់&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code>
+</pre>
+    </div>
+
+    <div class="nav-links" style="margin-top: 20px;">
         <a href="lesson4.html">មេរៀនមុន</a>
         <a href="lessons.html">ទំព័រដើម</a>
         <a href="lesson6.html">មេរៀនបន្ទាប់</a>
